@@ -8,32 +8,42 @@
     <title>INICIO DE SESION</title>
 </head>
 <body>
-    <div class="formulario">
-        <!-- TEMPLATE -->
-        <template id="template-sesion"> 
-            <form action="inicioSesion.php">
-                <table>
-                    <caption>
-                        <h1>LOGIN</h1>
-                    </caption>
-                    <tr>
-                        <td>Usuario: </td>
-                        <td><input type="text" name="username" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>Contraseña:  </td>
-                        <td><input type="password" name="password" id=""></td>
-                    </tr>
-                    <tr>
-                        <td id="boton">
-                            <input colspan="2" type="submit"  name="submit" value="Ingresar">
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </template>
-    </div>
+    <!-- TEMPLATE -->
+    <template id="template-sesion">
+        <link rel="stylesheet" href="CSS/loginCSS.css">
+        <form action="inicioSesion.php" method="post" id="loginform">
+            <table id="tablalogin">
+                <caption>
+                    <h1>LOGIN</h1>
+                </caption>
+                <tr>
+                    <td>Usuario: </td>
+                    <td><input type="text" name="username" id=""></td>
+                </tr>
+                <tr>
+                    <td>Contraseña: </td>
+                    <td><input type="password" name="password" id=""></td>
+                </tr>
+                <tr>
+                    <td id="boton">
+                        <input colspan="2" type="submit" name="submit" value="Ingresar">
+                    </td>
+                </tr>
+                <tr>
+                    <td>No tienes cuenta?</td>
+                    <td>
+                        <a href="">Registarse</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </template>
     <inicio-sesion></inicio-sesion>
+    
+    <!-- Shadow DOM -->
+    <footer>
+        
+    </footer>
 
     <script src="JavaScript/loginJS.js"></script>
 </body>

@@ -1,0 +1,19 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;    
+}
+body{
+    background: -webkit-linear-gradient(rgb(126, 212, 139),rgb(203, 236, 206)) no-repeat;
+}
+#loginform{
+    border: 2px solid #000000;
+    margin-left: 30%;
+    margin-right: 30%;
+    background: whitesmoke;
+    margin-top: 10%;
+}
+#boton{
+    padding-left: 37%;
+}
+#registrar{
+    padding-left: 10%;
+}
