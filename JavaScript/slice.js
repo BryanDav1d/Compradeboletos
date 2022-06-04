@@ -192,7 +192,15 @@ class SliceComSoon extends HTMLElement{
         font-weight: bolder;
         cursor: pointer; 
     }
-        
+    .info {
+        padding: 10px 20px;
+    }
+    .info p{
+        font-size: 30px;
+        color: rgb(31, 163, 31);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
       </style>
 
 
