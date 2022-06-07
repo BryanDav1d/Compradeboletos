@@ -7,20 +7,6 @@ class SliceCatal extends HTMLElement {
         let shawRoot = this.attachShadow({ mode: 'open' });
         shawRoot.innerHTML = `
     <style>
-    *{
-        padding: 0;
-        margin: 0;
-        font-family:Arial, Helvetica, sans-serif;
-    }
-    body{
-        background-color: rgb(245, 245, 245);
-    }
-    
-    .imagen{
-        border: solid 2px black;
-        margin: 15px;
-        text-align: center;
-    }
     
     .cuadro{
         display: inline-block;
@@ -31,18 +17,22 @@ class SliceCatal extends HTMLElement {
         margin: 15px;
     }
     .catalogo{
-        border: 2px solid black;
         text-align: center;  
-        padding-left: 10%;
-        padding-right: 10%;
         margin: 20px;
         height: 100%;
         right: 20px;
+        width: 80%;
+        position: relative;
+        left: 100px;
     }
-    
     
     .cuadro h4 {
         margin-bottom: 10px;
+        
+    }
+    .cuadro p{
+        color: green;
+        font-size: 27px;
     }
     .cimagen{
         height: 260px;
@@ -63,57 +53,57 @@ class SliceCatal extends HTMLElement {
         cursor: pointer; 
     }
         
-      </style>
+    </style>
      
     <div class="catalogo">
         <h2>Catálogo</h2>
         <div class="cuadro">
             <img src="Img/portada1.jpg" class="cimagen">
             <div class="info">
-                <h4>Doctor Strange 3D</h4>
-                <p>$6,50</p>
+                <h4>Doctor Strange</h4>
+                <p>5.00$</p>
             </div>
-            <input type="button" value="COMPRAR" class="carrito">
+            <input type="button" value="VER" class="carrito">
         </div>
         <div class="cuadro">
             <img src="Img/portada2" class="cimagen">
             <div class="info">
-                <h4>Scary movie 2D</h4>
-                <p>$4,50</p>
+                <h4>Scary movie</h4>
+                <p>2.00$</p>
             </div>
-            <input type="button" value="COMPRAR" class="carrito">
+            <input type="button" value="VER" class="carrito">
         </div>
         <div class="cuadro">
             <img src="Img/portada3.jpg" class="cimagen">
             <div class="info">
                 <h4>Thor and love</h4>
-                <p>$7,00</p>
+                <p>7.00$</p>
             </div>
-            <input type="button" value="COMPRAR" class="carrito">
+            <input type="button" value="VER" class="carrito">
         </div>
         <div class="cuadro">
             <img src="Img/portada4.jpg" class="cimagen">
             <div class="info">
-                <h4>Spiderman: <br> Sin regreso a casa 2D</h4>
-                <p>$4,50</p>
+                <h4>Spiderman: <br> Sin regreso a casa</h4>
+                <p>5.00$</p>
             </div>
-            <input type="button" value="COMPRAR" class="carrito">
+            <input type="button" value="comprar" class="carrito">
         </div>
         <div class="cuadro">
             <img src="Img/portada5.jpg" class="cimagen">
             <div class="info">
-                <h4>Ton Gun Maverick 3D</h4>
-                <p>$6,50</p>
+                <h4>Ton Gun Maverick</h4>
+                <p>6.00$</p>
             </div>
-            <input type="button" value="COMPRAR" class="carrito">
+            <input type="button" value="VER" class="carrito">
         </div>
         <div class="cuadro">
             <img src="Img/portada6.jpg" class="cimagen">
             <div class="info">
-                <h4>Sonic 2 3D</h4>
-                <p>$5,50</p>
+                <h4>Sonic 2</h4>
+                <p>5.00$</p>
             </div>
-            <input type="button" value="COMPRAR" class="carrito">
+            <input type="button" value="VER" class="carrito">
         </div>
     </div>
       `;
@@ -137,72 +127,54 @@ class SliceComSoon extends HTMLElement{
         let shawRoot = this.attachShadow({ mode: 'open' });
         shawRoot.innerHTML = `
         <style>
-    *{
-        padding: 0;
-        margin: 0;
-        font-family:Arial, Helvetica, sans-serif;
-    }
-    body{
-        background-color: rgb(245, 245, 245);
-    }
     
-    .imagen{
-        border: solid 2px black;
-        margin: 15px;
-        text-align: center;
-    }
-    
-    .cuadro{
-        display: inline-block;
-        list-style: none;
-        border-radius: 15px;
-        background: white;
-        border:3px solid rgb(141, 80, 160);
-        margin: 15px;
-    }
-    .catalogo{
-        border: 2px solid black;
-        text-align: center;  
-        padding-left: 10%;
-        padding-right: 10%;
-        margin: 20px;
-        height: 100%;
-        right: 20px;
-    }
-    
-    
-    .cuadro h4 {
-        margin-bottom: 10px;
-    }
-    .cimagen{
-        height: 260px;
-        width: 250px;
-        justify-content: space-evenly;
-        align-items: center;
-        border-radius: 13px;
-    }
-    .carrito{
-        background: rgb(183, 121, 207);
-        text-decoration: none;
-        height: 40px;
-        width: 200px;
-        border-radius: 20px;
-        margin: 5px;
-        color: rgb(14, 34, 99);
-        font-weight: bolder;
-        cursor: pointer; 
-    }
-    .info {
-        padding: 10px 20px;
-    }
-    .info p{
-        font-size: 30px;
-        color: rgb(31, 163, 31);
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-      </style>
-
+        .cuadro{
+            display: inline-block;
+            list-style: none;
+            border-radius: 15px;
+            background: white;
+            border:3px solid rgb(141, 80, 160);
+            margin: 15px;
+        }
+        .catalogo{
+            /* border: 2px solid black; */
+            text-align: center;  
+            margin: 20px;
+            height: 100%;
+            width: 80%;
+            position: relative;
+            left: 100px;
+        }   
+        .cuadro h4 {
+            margin-bottom: 10px;
+        }
+        .cimagen{
+            height: 260px;
+            width: 250px;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 13px;
+        }
+        .carrito{
+            background: rgb(183, 121, 207);
+            text-decoration: none;
+            height: 40px;
+            width: 200px;
+            border-radius: 20px;
+            margin: 5px;
+            color: rgb(14, 34, 99);
+            font-weight: bolder;
+            cursor: pointer; 
+        }
+        .info {
+            padding: 10px 20px;
+        }
+        .info p{
+            font-size: 30px;
+            color: rgb(31, 163, 31);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        </style>
 
         <div class="catalogo">
         <h2>Estrenos</h2>
@@ -242,9 +214,6 @@ class SliceComSoon extends HTMLElement{
             </div>
         </div>
     </div>`;
-
-    
-
     }
 
 }

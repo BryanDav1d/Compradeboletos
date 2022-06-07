@@ -1,54 +1,88 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;     
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
-body{
-    background: -webkit-linear-gradient(rgb(177, 126, 212),rgb(225, 203, 236)) no-repeat;
+html{
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(50deg, rgb(182, 176, 214),rgb(150, 135, 235), rgb(182, 176, 214));
+    background-size: 400% 400%;
+    animation: cambio 7s ease infinite;
 }
-#loginform{
-    border: 3px solid #000000;
-    margin: 20%;
-    background-color: whitesmoke;
-    margin-top: 95px;
-    padding: auto;
-    
+@keyframes cambio{
+    0%{background-position:0 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0 50%;}
 }
-#tablalogin{
-    border: 2px solid #000000;
+form {
+    padding: 20px 20px;
+    background-color: #fdf7f7a6;
+    border-style: outset;
+    border-width: 1px black;
+    width: 20%;
+    height: 60%;
+    margin-top: 130px;
+    padding-top: 28px;
+    margin-bottom: 30px;
+    position: absolute;
+    left: 38%;
+}
+
+h1 {
+    text-align: center;
+    padding: 12px;
+    color: #161614;
+}
+
+input {
+    width: 90%;
+    padding: 9px;
     margin: auto;
-    background-color: rgb(243, 180, 255);
-    padding: 20px;
-    width: auto;
-    margin-bottom: 20px;
+    margin-top: 12px;
+    font-size: 16px
 }
-#boton{
-    padding-left: 37%;
+
+input[type='submit'] {
+    background-color: rgb(28, 36, 48);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    width: 50%;
+    margin: 0 10%;
+    margin-top: 22px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+
 }
-#boton>input{
-    margin-top: 15px;
-    padding: 10px;
-    background-color: rgb(144, 231, 156);
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 7px;
-}
-#boton>input:hover{
+
+#boton>input:hover {
     cursor: pointer;
 }
-#registrar{
+
+#registrar {
     padding-left: 10%;
 }
-#cancelarsesion{
+
+#cancelarsesion {
     border: solid 2px black;
     width: 80px;
     height: 20px;
     text-align: center;
+    align-content: center;
     padding: 7px;
     margin: 10px;
-    background: rgb(161, 65, 65);
+    background-color: #070917a6;
     border-radius: 10px;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    
 }
-#cancelarsesion>a{
+
+#cancelarsesion>a {
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
     font-weight: bolder;
 
 }

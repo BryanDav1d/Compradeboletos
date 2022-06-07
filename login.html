@@ -1,53 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/loginCSS.css">
-    <title>INICIO DE SESION</title>
-</head>
-<body>
-    <!-- TEMPLATE -->
-    <template id="template-sesion">
-        <link rel="stylesheet" href="CSS/loginCSS.css">
-        <!--  -->
-        <form action="inicioSesion.php" method="post" id="loginform">
-            <table id="tablalogin">
-                <div id="cancelarsesion">
-                    <a href="catalogo.html">Cancelar</a>
-                </div>
-                <caption>
-                    <h1>Iniciar Sesión</h1>
-                </caption>
-                <tr>
-                    <td>Usuario: </td>
-                    <td>
-                        <input type="text" name="username" id="">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Contraseña: </td>
-                    <td>
-                        <input type="password" name="password" id="">
-                    </td>
-                </tr>
-                <tr>
-                    <td id="boton">
-                        <input colspan="2" type="submit" name="submit" value="Ingresar">
-                    </td>
-                </tr>
-                <tr>
-                    <td>No tienes cuenta? </td>
-                    <td>
-                        <a href="">Registrate</a>
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </template>
-    <inicio-sesion></inicio-sesion>
 
-    <script src="JavaScript/loginJS.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="JavaScript/loginJS.js"></script>
+		<link rel="stylesheet" href="CSS/loginCSS.css">
+		<title>Login</title>
+	</head>
+
+	<body>
+		<template id="template-sesion">
+			<link rel="stylesheet" href="CSS/loginCSS.css">
+			<form action="conexion.php" method="post">
+				<h1>Bienvenido</h1>
+				<p>Usuario <input type="text" placeholder="Ingrese su nombre:" name="Usuario"></p>
+				<br>
+				<p>Contraseña <input type="password" placeholder="Ingrese su contraseña:" name="Contraseña"></p>
+				<input type="submit" value="Ingresar">
+				<p style="margin-top: 10px;">¿No tienes cuenta? </p>
+				<a href="registrar.html">Registrar</a>
+				<div id="cancelarsesion">
+					<a href="catalogo.html">Cancelar</a>
+			</form>
+		</template>
+		<inicio-sesion></inicio-sesion>
+	</body>
+
 </html>
